@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+    <script src="./javascript.js" defer></script>
+    <title>Caesar Encryption</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="infoANDinputArea">
+            <div class="userInput">
+                <input type="text" class="userInputText" id="userInputText" placeholder="Input text"></input>
+                <input type="number" class="userInputNumber" id="userInputNumber" placeholder="Input number"></input>
+            </div>
+            <div class="caesarInfo">
+                <ol>
+                    <li>Write a Text in the first Inputbox.</li>
+                    <li>Write a Number in the second Inputbox</li>
+                    <li>Click on the Encrypt Button</li>
+                    <li>Every Letter in the Text is going to <br>shift by the given number in the<br>alphabet.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="buttonArea">
+            <button class="encryptButton" onclick="convert()">Encrypt/Decrypt</button>
+            <button class="resetButton" onclick="reset()">Reset</button>
+        </div>
+        <div class="conversionOutputArea">
+            <div class="conversionOutput" id="conversionOutput"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

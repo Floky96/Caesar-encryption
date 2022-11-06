@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .infoANDinputArea {
+        height: 20rem;
+        width: 40rem;
+        background-color: rgb(110, 202, 198);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .userInput {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .userInputText {
+                height: 1.5rem;
+                width: 12rem;
+                margin: .2rem;
+                line-height: 1rem;
+            }
+
+            .userInputNumber {
+                height: 1.5rem;
+                width: 12rem;
+                margin: .2rem;
+                line-height: 1rem;
+            }
+        }
+
+        .caesarInfo {
+            background-color: white;
+
+            ol {
+                padding-right: 1rem;
+                padding-left: 2rem;
+            }
+        }
+    }
+
+    .buttonArea {
+        height: 4rem;
+        width: 40rem;
+        background-color: lightslategray;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .encryptButton {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .resetButton {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .conversionOutputArea {
+        height: 4rem;
+        width: 40rem;
+        background-color: lightsteelblue;
+        margin-top: 2.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .conversionOutput {
+            height: 2.3rem;
+            width: 20rem;
+            background-color: white;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+    }
+
+}
